@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<HTML>
+<BODY>
+<CANVAS ID="myCanvas" width="300" height="300" style="border:1px solid
+black">
+</CANVAS>
+<SCRIPT>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.font="25px Georgia";
+ctx.strokeText("Stroke Text",10,60,120);
+ctx.font="25x Verdana";
+var gradient=ctx.createLinearGradient(0,0,170,0);
+gradient.addColorStop("0","magenta");
+gradient.addColorStop("0.5","blue");
+gradient.addColorStop("1.0","red");
+ctx.strokeStyle=gradient;
+ctx.strokeText("Sannidhya Biswas",10,90,200);
+</SCRIPT>
+</BODY>
+</html>

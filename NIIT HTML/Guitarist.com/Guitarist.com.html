@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<body background="guitar pick1.png">
+<center>
+<img src="guitar1.png" width="100px" height="100px"/>
+<h2>
+<font face="Comics Sans MS">
+Guitarist.com
+</font>
+</h2>How to be a good guitarist
+</h5>
+</center>
+<hr>
+<h1><i><b><u>What is a guitar?</u></b></i></h1>
+<p>
+The guitar is a musical instrument classified as a
+ fretted string instrument with anywhere from four
+ to 18 strings, usually having six.[citation needed]
+ The sound is projected either acoustically, using a
+ hollow wooden or plastic and wood box (for an
+ acoustic guitar), or through electrical amplifier
+ and a speaker (for an electric guitar). It is
+ typically played by strumming or plucking the
+ strings with the fingers, thumb or fingernails of 
+ the right hand or with a pick while fretting 
+ (or pressing against the frets) the strings with 
+ the fingers of the left hand. The guitar is a type
+ of chordophone, traditionally constructed from wood
+ and strung with either gut, nylon or steel strings 
+ and distinguished from other chordophones by its 
+ construction and tuning. The modern guitar was 
+ preceded by the gittern, the vihuela, the 
+ four-course Renaissance guitar, and the five-course
+ baroque guitar, all of which contributed to the
+ development of the modern six-string instrument.
+ </p>
+ <br>
+ <p>
+ There are three main types of modern acoustic 
+ guitar: the classical guitar (nylon-string guitar),
+ the steel-string acoustic guitar, and the archtop 
+ guitar, which is sometimes called a "jazz guitar".
+  </p>
+<h1><u><b>Please select your age group:</b></u></h1>
+<br>
+<a href="L5.html"><5</a><br><br>
+<a href="5-10.html">5-10</a><br><br>
+<a href="10-15.html">10-15</a><br><br>
+<a href="15-20.html">15-20</a><br><br>
+<a href="20M.html">20<</a><br><br>
+</body>
+<head>	
+<title>Guitarist.com</title>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
+  <button class="tablinks" onclick="openCity(event, 'Guitars for sale')">Guitars for sale</button>
+  <button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
+</div>
+
+<div id="About me" class="tabcontent">
+  <h3>About me</h3>
+  <p>My name is Sannidhya Biswas. I have been playing guitar for 4 years. I have
+  developed a websites showing which guitars are for sale.I hope this website will 
+  help you find a suitable guitar for your age.</p>
+</div>
+
+<div id="Guitars for sale" class="tabcontent">
+  <h3>Guitars of sale</h3>
+  <p>Click on the hyperlinks above to see guitars according to your age.</p>
+  </div>
+<div id="Contacts" class="tabcontent">
+  <h3>Contacts</h3>
+  <p>If you have any problem, please contact these nos.</p>
+  <br>+91 9073904590
+  <br>+91 9831975580
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</head>
+
+</html>

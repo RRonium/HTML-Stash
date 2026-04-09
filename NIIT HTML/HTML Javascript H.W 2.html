@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		NIIT H.W.
+	</title>
+	<script type="text/javascript">
+		
+		var name;
+		var department;
+		var basic;
+		var hra;
+		var ta;
+		var ca;
+		var pf;
+		var gross;
+		var net;
+		name=prompt("Enter your name");
+		department=prompt("Enter your department");
+		basic=parseInt(prompt("Enter your basic salary"));
+		hra=parseInt(basic*0.2);
+		ta=parseInt(basic*0.15);
+		ca=parseInt(basic*0.30);
+		pf=parseInt(basic*0.12);
+		gross=basic+hra+ta+ca+pf;
+		net=gross-pf;
+		alert("Gross Salary is:"+gross+" and net salary is:"+net);
+	</script>
+</head>
+<body>
+</body>
+</html>

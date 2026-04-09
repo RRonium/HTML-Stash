@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-2.1.3.min.js"></script>
+<script>
+//hiding all elements with id="test".
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+		 $("#test1").hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="test">This is another paragraph.</p>
+<h2 id="test1">This is a heading</h2>
+
+<p >This is a paragraph.</p>
+
+
+<button>Click me</button>
+
+</body>
+</html>

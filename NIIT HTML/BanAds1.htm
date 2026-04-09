@@ -1,0 +1,22 @@
+<HTML>
+<HEAD><TITLE>ADS</TITLE>
+<SCRIPT LANGUAGE="JavaScript"><!--
+address=new Array("http://www.niit.com","http://www.intel.com","http://www.ibm.com","http://www.cnn.com","http://www.lotus.com","http://www.stg.com")
+function displayAd()
+{
+	ad=Math.round(Math.random()*(address.length-1))
+		document.write(ad)
+	document.write('<P ALIGN="CENTER"><A href="'+address[ad]+'">')
+	document.write('<IMG SRC="Bfly'+ad+'.gif" BORDER="0">')
+	document.writeln('</A></P>')
+}
+// --></SCRIPT>
+</HEAD>
+<BODY BGCOLOR="FFFFFF">
+<SCRIPT LANGUAGE="JavaScript"><!--
+displayAd()
+// --></SCRIPT>
+</P><H1 ALIGN="CENTER"> Ads which changes daily</H1>
+</BODY>
+</HTML>
+				

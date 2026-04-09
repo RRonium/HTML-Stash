@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<SCRIPT type="text/javascript" src="RGraph\libraries\RGraph.common.core.js" ></SCRIPT>
+<SCRIPT type="text/javascript" src="RGraph\libraries\RGraph.bar.js" ></SCRIPT>
+<TITLE>Bar chart</TITLE>
+</HEAD>
+<BODY>
+<CANVAS width="500" height="250" ID="test" style="border:5px solid black">
+</CANVAS>
+<SCRIPT type="text/javascript" charset="utf-8">
+var bar = new RGraph.Bar('test', [100,90,100,70,50]);
+bar.Set('chart.colors', ['magenta']);
+bar.Set('chart.title', "Marks Report" );
+bar.Set('chart.labels', ["Sona" , "Anu" , "Sannidhya" , "Saachi","Rolly"]);
+bar.Draw();
+</SCRIPT>
+</BODY>
+</HTML>

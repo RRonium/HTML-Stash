@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            We Back!!!
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body
+            {
+                background-color: antiquewhite;
+                font-family: Arial;
+            }
+            pre
+            {
+                border: 3px solid powderblue;
+                padding: 30px;
+            }
+            a:link
+            {
+                color:blue;
+                display: inline-block
+            }
+            a:visited
+            {
+                color:violet
+            }
+            a:active
+            {
+                color: brown;
+            }
+            a:hover
+            {
+                color: peachpuff;
+            }
+            table, th, td          
+            {
+                border:2px antiquewhite;
+                border-collapse: collapse;
+                border-radius: 10px;
+                border-style:dotted;
+                border-color:blue;
+            }
+            th, td
+            {
+                background-color: rgb(209, 138, 162);
+                padding: 15px;
+            }
+        </style>
+        <!--cell padding can be done in specific directions as well such as padding-top, padding-left, padding-right and padding-bottom--> 
+        <!--You can skip the border of the table all together by removing table from the css selector-->
+        <div style="background-color: rgb(219, 101, 101)">
+        <h1>This is the h1 header.</h1>
+        <h2>This is the h2 Header</h2>
+        <h3>This is the h3 header</h3>
+        </div>
+        <div style="background-color: aquamarine">
+        <h4>This is the h5 header.</h4>
+        <h5>This is the h5 Header.</h5>
+        <h6>This is the h6 header.</h6>
+        </div>
+        <a href="#jump">Jump to the bottom</a>
+        <p>This is a demonstration for the paragraph tab :)</p>
+    </head>
+    <body>
+        <p><b>This</b> is the Body
+            You must have noticed that <u>"This"</u> was in bold in the prev line.
+            And is now underlined. Yaas!!!
+        </p>
+        <p>We're gonna break a line like...<br>That. See?</p>
+        <br>
+        <a href="https://www.wikipedia.com" target="_blank">Click here to learn more</a>
+        <br>
+        <p style="color:red;">Now we've changed the colour of the paragraph to red.</p>
+        <p title="Cool isn't it?">Hover the mouse pointer over me!</p>
+        <pre>
+            This is an example
+
+            of pre-formatted text in html.
+
+            It has a fixed font...normally Courier
+
+            and fixed spaces. End.
+        </pre>
+        <p style="background-color: powderblue; font-family: Calibri; text-align: center;">This is a demonstration of the usage of the style attribute of html and integration of css.</p>
+        <p>The speed of light is 3 x 10<sup>8</sup> m/s</p>
+        <p>The chemical formula for water is H<sub>2</sub>O</p>
+        <pre id="jump">
+            <i>This text is in italics</i>
+            <strong>This text is a demo for the strong tag</strong>
+            <small>This is a small demo</small>
+            <del>This text is cut out</del>
+            <em>em tag or Emphasis demo. This tag can be overridden using CSS in the style tag in head.</em>
+            <mark>This text is highlighted.</mark>
+            <mark style="background-color: aqua;">This text is highlighted. But it's in a different color because of CSS</mark>
+        </pre>
+        <button onclick="document.location='https://www.ndtv.com/'">News</button>
+        <h2 style="text-align: center; background-color: aquamarine;">Now we are going to learn how to create tables</h2>
+        <br><br><br>
+        <table style="width:100%">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr style="height:100px">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Sannidhya</td>
+                <td>Biswas</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Ankan</td>
+                <td>Pal</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Pramit</td>
+                <td>Bagchi</td>
+                <td>15</td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h3>This is a demo of an unordered list:</h3>
+        <ul style="list-style-type: disc;;">
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+        <br><br>
+        <h3>This is a demo of an ordered list:</h3>
+        <ol>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Mango</li>
+        </ol>
+        <br><br>
+        <h3>A Descriptive List</h3>
+        <dl>
+            <dt>Water</dt>
+            <dd>-AquaFina</dd>
+            <dd>-Himalayan</dd>
+            <dd>-Fiji</dd>
+
+            <dt>Soda</dt>
+            <dd>-CocaCola</dd>
+            <dd>-Pepsi</dd>
+            <dd>-Sprite</dd>
+        </dl>
+        <br>
+        <iframe src="https://www.wikipedia.com" style="border: 3px solid red; width:1450px;" title="Iframe Example"></iframe>
+    </body>
+</html>

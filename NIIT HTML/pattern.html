@@ -1,0 +1,23 @@
+<!Doctype HTML>
+<HTML>
+<SCRIPT> 
+function draw(direction) 
+{ 
+var c=document.getElementById("myCanvas"); 
+var ctx=c.getContext("2d"); 
+var img=document.getElementById("pattern");
+ var pat=ctx.createPattern( ,direction); 
+ctx.rect(0,0,800,850); 
+ctx.fillStyle=pat; 
+ctx.fill(); 
+} 
+</SCRIPT> 
+<Body>
+<P>Image to use:</P> 
+<IMG src="patt2.jpg" ID="pattern" width=50 height=50> 
+<P>Canvas:</P> 
+<BUTTON onclick="draw('repeat')">Repeat</BUTTON> 
+<CANVAS ID="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
+ Your browser does not support the HTML5 canvas tag.
+</CANVAS> 
+</Body>

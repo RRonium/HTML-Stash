@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<HTML>
+<BODY onload=setImage()>
+<CANVAS ID="myCanvas" width="350" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</CANVAS>
+<SCRIPT>
+function setImage(){
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var img=new Image();
+img.src="patt2.jpg";
+img.onload = function() {
+ctx.drawImage(img,10,10,200,200,50,70,100,100);
+}
+}
+</SCRIPT>
+</BODY>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-2.1.3.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+
+    $("#b1").click(function(){
+        $("div").animate({left: '1000px'});
+});
+ $("#b2").click(function(){
+        $("div").animate({left: '5px'});
+});
+});
+</script> 
+</head>
+<body>
+
+<button id="b1">Right Move</button>
+<button id="b2">Left Move</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#68be21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

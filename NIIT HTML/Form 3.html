@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>form</title>
+<Script type="text/JavaScript">
+function fun()
+{
+	var N=document.getElementById('nm').value;
+	var G=document.getElementById('gen').value;
+	if(G=="Male")
+	{
+		alert("Hello Mr.:"+N);
+	}
+	else
+	{
+		alert("Hello Ms.:"+N);
+	}
+}
+</Script>
+</head>
+<body>
+<form name="myfrm" onSubmit="fun()">
+<label>Name:</label>
+<br>
+<input id="nm" type="text" name="name"/>
+<br>
+<label>Gender:</label>
+<br>
+<input id="gen" type="text" name="Gender"/>
+<br>
+<input type="submit" name="Submit"/>
+<input type="reset" name="reset"/>
+</form>
+</body>
+</html>

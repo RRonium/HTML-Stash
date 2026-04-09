@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<HTML>
+<BODY>
+<CANVAS ID="myCanvas" width="600" height="300"
+style="border:10px solid">
+</CANVAS>
+<SCRIPT>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rect(35,147,129,180);
+ctx.stroke();
+ctx.fillStyle="blue";
+ctx.shadowBlur=30;
+ctx.shadowColor="green";
+ctx.fillRect(167,48,180,190);
+ctx.stroke();
+ctx.strokeStyle="yellow";
+ctx.strokeRect(347,47,160,20);
+ctx.fillStyle="red";
+
+ctx.fillRect(466,80,160,160);
+//ctx.clearRect(567,66,47,47);
+</SCRIPT>
+</BODY>
+</HTML>
+The preceding code creates rectangles

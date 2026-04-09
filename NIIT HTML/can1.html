@@ -1,0 +1,23 @@
+<!Doctype HTML>
+<HTML>
+	<Head>
+		<Title>
+			My Drawing
+		</Title>
+		
+	</Head>
+	<Body>
+		<Canvas id="myCanvas" width="220" height="300" style="border:5px solid
+black">
+	</Canvas>
+	<Script type="text/javascript">
+			var c=document.getElementById("myCanvas");
+			var ctx=c.getContext("2d");
+			//ctx.rect(10,20,200,150);
+			ctx.fillRect(10,20,200,150);
+			//ctx.stroke();
+			//ctx.strokeRect(10,20,200,150);
+			ctx.clearRect(50,60,100,100);
+		</Script>
+	</Body>
+</HTML>

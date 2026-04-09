@@ -1,0 +1,31 @@
+<HTML>
+<HEAD><TITLE>ADS</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+address=new Array("http://www.niit.com",
+			"http://www.yahoo.com",
+			"http://www.gmail.com",
+			"http://www.niitstudent.com/india",
+			"http://www.rediffmail.com",
+			"http://www.facebook.com",
+			"http://www.googleearth.com")
+			function displayAd()
+			{
+				var day=new Date()
+				//ad=day.getDay()
+				ad=day.getHours()	
+				alert(ad)
+				document.write('<P ALIGN="CENTER"><A href="'+address[ad]+'">')
+				document.write('<IMG SRC="Bfly'+ad+'.gif" BORDER="5">')
+				document.writeln('</A></P>')
+			}
+// --></SCRIPT>
+</HEAD>
+<BODY BGCOLOR="FEEF00" onLoad=displayAd()>
+<SCRIPT LANGUAGE="JavaScript"><!--
+displayAd()
+// --></SCRIPT>
+</P><H1 ALIGN="CENTER"> Ads which changes daily</H1>
+</BODY>
+</HTML>
+				
